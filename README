@@ -1,0 +1,11 @@
+required SDL2 to build
+
+SDL2 used only to display a window (Xlib is ugly and xcb lacks documentation, couldnt make it work the way i wanted)
+all rednering done on cpu through setup() and nextframe() functions in main.c
+
+build with
+mkdir build && cd build
+cmake ..
+make
+
+produced binary is build/bin/cpurend
